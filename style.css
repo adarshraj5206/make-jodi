@@ -1,0 +1,131 @@
+*{
+ margin : 0; 
+ padding : 0; 
+ box-sizing : border-box; 
+}
+
+html, body{
+ height : 100%;
+ width : 100%;
+}
+
+@font-face {
+    font-family: Voyage;
+    src: url(./voyage-regular.otf);
+}
+
+@font-face {
+    font-family: Rosalie;
+    src: url(./Rosalie.ttf);
+}
+
+@font-face {
+    font-family: Handmade;
+    src: url(./Handmade\ Mandala.otf);
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Medium.otf);
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #EFB6C8;
+}
+
+nav{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A888B5;
+}
+
+nav h3{
+    font-family: Voyage;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nav-right{
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    font-family: Rosalie;
+    font-weight: 200;
+}
+
+.slogan{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan h2{
+    text-align: center;
+    font-size: 28px;
+    font-family: Handmade;
+    font-weight: 200;
+}
+
+.matcher-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+}
+
+.boys, .girls{
+    padding: 10px;
+    width: 300px;
+    height: 100%;
+    border: 2px solid #A888B5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.boys img, .girls img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1.5px solid black;
+}
+
+.boys h3,.boys h4, .girls h3, .girls h4{
+    font-family: gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+.match-btn{
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #A888B5;
+    border: 1px solid #A888B5;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    font-family: gilroy;
+}
+
+.match-btn:active{
+    scale: 0.9;
+    background-color: #8174A0;
+    border: 1px solid #8174A0;
+    color: black;
+}
